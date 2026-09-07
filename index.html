@@ -1,0 +1,9 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Yüksek Şuura | Online Seçim</title><link rel="stylesheet" href="style.css"></head><body>
+<div id="app"><aside><div class="brand"><div class="logo">🗳️</div><div><b>Yüksek Şuura</b><small>Online Seçim</small></div></div><button class="nav active" data-page="home">🏠 Ana Sayfa</button><button class="nav" data-page="vote">🗳️ Oy Kullan</button><button class="nav" data-page="results">📊 Sonuçlar</button><button class="nav adminOnly" data-page="admin">👑 Yönetim</button></aside>
+<main><header><div><h2 id="pageTitle">Online Seçim Sistemi</h2><p id="pageSub">Kulüp ve topluluk seçimlerinizi güvenle yönetin.</p></div><div id="auth"></div></header>
+<section id="home" class="page"><div class="hero"><small>YÜKSEK ŞUURA</small><h1>Online Seçim Sistemi</h1><p>Aktif seçimleri görüntüleyin, yetkiniz varsa oyunuzu kullanın ve sonuçları takip edin.</p></div><div id="homeContent"></div></section>
+<section id="vote" class="page hidden"><div id="voteContent"></div></section>
+<section id="results" class="page hidden"><div id="resultsContent"></div></section>
+<section id="admin" class="page hidden"><div class="card"><div class="tabs"><button class="tab active" data-admin-tab="elections">Seçimler</button><button class="tab" data-admin-tab="candidates">Adaylar</button><button class="tab" data-admin-tab="voters">Oy Kullanıcıları</button><button class="tab" data-admin-tab="votes">Oy Kayıtları</button></div><div id="adminContent"></div></div></section>
+</main></div><div id="modal" class="modal hidden"><div class="modalbox" id="modalContent"></div></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="app.js"></script></body></html>
